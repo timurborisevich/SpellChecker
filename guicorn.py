@@ -22,7 +22,3 @@ def app(environ, start_response):
         return [bytes(str(answer), encoding="utf8")]
 
 bind = "0.0.0.0:5556"
-
-
-print(AddNewWord('ОВиК'))
-print(CheckText('ОВиК'))
