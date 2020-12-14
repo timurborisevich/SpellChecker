@@ -21,6 +21,6 @@ def AddNewWord(word):
     with open('NewWords.txt', 'a', encoding='utf-8') as file:
         if not new_dictionary.check(word):
             file.write('\n' + word)
-            return "Добавлен!"
+            return "Добавлено!"
         else:
             return "Слово уже есть в словаре!"
