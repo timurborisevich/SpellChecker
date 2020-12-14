@@ -20,3 +20,5 @@ def app(environ, start_response):
     if params_dic['wordexc'] != '':
         answer = AddNewWord(params_dic['wordexc'])
         return [bytes(answer, encoding="unicode")]
+
+bind = "0.0.0.0:5556"
