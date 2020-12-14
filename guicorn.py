@@ -16,9 +16,9 @@ def app(environ, start_response):
     params_dic = pars_environ(environ)
     if params_dic['text'] != '':
         answer = CheckText(params_dic['text'])
-        return [bytes(answer, encoding="unicode")]
+        return [bytes(answer, encoding='utf-8')]
     if params_dic['wordexc'] != '':
         answer = AddNewWord(params_dic['wordexc'])
-        return [bytes(answer, encoding="unicode")]
+        return [bytes(answer, encoding='utf-8')]
 
 bind = "0.0.0.0:5556"
